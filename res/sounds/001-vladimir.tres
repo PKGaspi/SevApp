@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource( 1 )
+id = 0
 title = "Vladimir"
 transcript = "Como dijo Vladimir, una paja y a dormir."
 language = 1
