@@ -7,6 +7,7 @@
 margin_right = 280.0
 margin_bottom = 300.0
 rect_min_size = Vector2( 280, 341 )
+mouse_filter = 1
 size_flags_horizontal = 6
 script = ExtResource( 2 )
 __meta__ = {
@@ -23,6 +24,7 @@ __meta__ = {
 [node name="Button" type="Button" parent="VBoxContainer"]
 margin_right = 280.0
 margin_bottom = 280.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 1 )
@@ -34,6 +36,7 @@ __meta__ = {
 margin_top = 284.0
 margin_right = 280.0
 margin_bottom = 341.0
+mouse_filter = 1
 custom_constants/margin_top = 4
 custom_constants/margin_bottom = 4
 

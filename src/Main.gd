@@ -2,6 +2,7 @@ extends Control
 
 const SOUND_BUTTON = preload("res://src/SoundButton.tscn")
 const FONT = preload("res://res/font.tres")
+const LANGUAGE_SECTION_CONTAINER = preload("res://src/LanguageSectionContainer.tscn")
 
 const SOUNDS_PATH = "res://res/sounds"
 
@@ -11,16 +12,20 @@ onready var _scroll_container_node = $VBoxContainer/ScrollContainer
 
 
 func _ready() -> void:
+	# Remove scroll bar.
+	_scroll_container_node.get_v_scrollbar().rect_scale.x = 0
+	
+	# Open sounds directory.
 	var dir := Directory.new()
 	var err = dir.open(SOUNDS_PATH)
 	if err != OK:
 		printerr("Error opening sounds directory. ", err)
 		return
 	
-	# Create array of arrays of buttons, separated by language
-	var containers := []
+	# Create array of arrays of sounds, separated by language
+	var sound_groups := []
 	for lang in global.languages:
-		containers.append([])
+		sound_groups.append([])
 	
 	# Load resources
 	err = dir.list_dir_begin()
@@ -32,37 +37,23 @@ func _ready() -> void:
 	while file_name != "":
 		if dir.file_exists(file_name):
 			var button = create_button(file_name)
-			containers[button.sound_data.language].append(button)
+			sound_groups[button.sound_data.language].append(button)
 		file_name = dir.get_next()
 	
 	# Add containers per language
 	var i = 0
-	for container in containers:
-		container.sort_custom(self, "sorter")
+	for sound_group in sound_groups:
+		sound_group.sort_custom(self, "sorter")
 		# Create a new container for this language
-		var vbox = VBoxContainer.new()
-		vbox.name = "%sVBoxContainer" % global.language_names[i]
-		var margin = MarginContainer.new()
-		margin.add_constant_override("margin_bottom", 10)
-		margin.add_constant_override("margin_top", 10)
-		margin.name = "LanguageMarginContainer"
-		var label = Label.new()
-		label.text = global.language_names[i]
-		label.add_font_override("font", FONT)
-		label.valign = Label.VALIGN_CENTER
-		label.align = Label.ALIGN_CENTER
-		label.name = "LanguageLabel"
-		var grid = GridContainer.new()
-		grid.columns = 3
-		grid.name = "ButtonsGrid"
-		# Add nodes to the scene
-		_buttons_containers_node.add_child(vbox)
-		vbox.add_child(margin)
-		margin.add_child(label)
-		vbox.add_child(grid)
+		var container = LANGUAGE_SECTION_CONTAINER.instance()
+		_buttons_containers_node.add_child(container)
+		container.set_title(global.language_names[i])
+		container.name = "%sSectionContainer" % global.language_names[i]
+		
+		for sound in sound_group:
+			container.add_button(sound)
+			
 		i += 1
-		for button in container:
-			grid.add_child(button)
 
 
 
