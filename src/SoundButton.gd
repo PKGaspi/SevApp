@@ -3,7 +3,7 @@ extends Control
 export var sound_data: Resource = null
 
 onready var _sound_node = $Sound
-onready var _label_node = $VBoxContainer/Label
+onready var _label_node = $VBoxContainer/MarginContainer/Label
 
 func _ready() -> void:
 	if sound_data != null:

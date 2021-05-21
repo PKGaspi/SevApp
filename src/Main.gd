@@ -46,6 +46,7 @@ func _ready() -> void:
 		label.valign = Label.VALIGN_CENTER
 		label.align = Label.ALIGN_CENTER
 		var separator = HSeparator.new()
+		separator.add_constant_override("separation", 20)
 		var grid = GridContainer.new()
 		grid.columns = 3
 		grid.name = global.language_names[i]
