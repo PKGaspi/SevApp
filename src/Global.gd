@@ -4,8 +4,10 @@ enum languages {
 	ES,
 	FR,
 	IT,
+	PR,
 	DE,
 	FI,
+	RU,
 }
 
 var language_names := [
@@ -13,6 +15,7 @@ var language_names := [
 	"Spanish",
 	"French",
 	"Italian",
+	"Portuguese",
 	"German",
 	"Finnish",
 	"Russian",
