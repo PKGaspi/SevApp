@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/SoundData.gd" type="Script" id=1]
+[ext_resource path="res://assets/sfx/002-paja_rapida.wav" type="AudioStream" id=2]
+
+[resource]
+script = ExtResource( 1 )
+title = "Paja Rápida"
+transcript = "Una paja rápida."
+language = 1
+stream = ExtResource( 2 )
