@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/SoundData.gd" type="Script" id=1]
+[ext_resource path="res://assets/sfx/001-vladimir.wav" type="AudioStream" id=2]
+
+[resource]
+script = ExtResource( 1 )
+title = "Vladimir"
+transcript = "Como dijo Vladimir, una paja y a dormir."
+language = 1
+stream = ExtResource( 2 )

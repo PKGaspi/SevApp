@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "SoundData",
+"language": "GDScript",
+"path": "res://src/SoundData.gd"
+} ]
+_global_script_class_icons={
+"SoundData": ""
+}
+
 [application]
 
 config/name="SevApp"
