@@ -1,8 +1,19 @@
-enum Languages {
+extends Node
+enum languages {
 	EN,
 	ES,
 	FR,
 	IT,
-	GE,
+	DE,
 	FI,
 }
+
+var language_names := [
+	"English",
+	"Spanish",
+	"French",
+	"Italian",
+	"German",
+	"Finnish",
+	"Russian",
+]
