@@ -6,7 +6,8 @@ const FONT = preload("res://res/font.tres")
 const SOUNDS_PATH = "res://res/sounds"
 
 
-onready var _buttons_containers_node = $ScrollContainer/VBoxContainer
+onready var _buttons_containers_node = $VBoxContainer/ScrollContainer/VBoxContainer
+onready var _scroll_container_node = $VBoxContainer/ScrollContainer
 
 
 func _ready() -> void:
@@ -40,20 +41,24 @@ func _ready() -> void:
 		container.sort_custom(self, "sorter")
 		# Create a new container for this language
 		var vbox = VBoxContainer.new()
+		vbox.name = "%sVBoxContainer" % global.language_names[i]
+		var margin = MarginContainer.new()
+		margin.add_constant_override("margin_bottom", 10)
+		margin.add_constant_override("margin_top", 10)
+		margin.name = "LanguageMarginContainer"
 		var label = Label.new()
 		label.text = global.language_names[i]
 		label.add_font_override("font", FONT)
 		label.valign = Label.VALIGN_CENTER
 		label.align = Label.ALIGN_CENTER
-		var separator = HSeparator.new()
-		separator.add_constant_override("separation", 20)
+		label.name = "LanguageLabel"
 		var grid = GridContainer.new()
 		grid.columns = 3
-		grid.name = global.language_names[i]
+		grid.name = "ButtonsGrid"
 		# Add nodes to the scene
 		_buttons_containers_node.add_child(vbox)
-		vbox.add_child(separator)
-		vbox.add_child(label)
+		vbox.add_child(margin)
+		margin.add_child(label)
 		vbox.add_child(grid)
 		i += 1
 		for button in container:
