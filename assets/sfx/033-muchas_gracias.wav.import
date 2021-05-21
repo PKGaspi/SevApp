@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/033-muchas_gracias.wav-5877b4edfdcd94f7dd1c1a9d62879226.sample"
+
+[deps]
+
+source_file="res://assets/sfx/033-muchas_gracias.wav"
+dest_files=[ "res://.import/033-muchas_gracias.wav-5877b4edfdcd94f7dd1c1a9d62879226.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

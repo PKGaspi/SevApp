@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/032-obrigado.wav-23a31222511afbb3b9c152d67b61aa40.sample"
+
+[deps]
+
+source_file="res://assets/sfx/032-obrigado.wav"
+dest_files=[ "res://.import/032-obrigado.wav-23a31222511afbb3b9c152d67b61aa40.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

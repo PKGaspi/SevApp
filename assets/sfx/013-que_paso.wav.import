@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/013-que_paso.wav-1e52cc2ef7f93ed154826da06a1b6cc4.sample"
+
+[deps]
+
+source_file="res://assets/sfx/013-que_paso.wav"
+dest_files=[ "res://.import/013-que_paso.wav-1e52cc2ef7f93ed154826da06a1b6cc4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

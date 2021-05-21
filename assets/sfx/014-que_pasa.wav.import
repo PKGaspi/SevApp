@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/014-que_pasa.wav-7bae299be93449af743d39cb83df78ad.sample"
+
+[deps]
+
+source_file="res://assets/sfx/014-que_pasa.wav"
+dest_files=[ "res://.import/014-que_pasa.wav-7bae299be93449af743d39cb83df78ad.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

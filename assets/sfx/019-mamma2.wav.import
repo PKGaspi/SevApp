@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/019-mamma2.wav-1589b3de24ccaa267e7e134cf8a79371.sample"
+
+[deps]
+
+source_file="res://assets/sfx/019-mamma2.wav"
+dest_files=[ "res://.import/019-mamma2.wav-1589b3de24ccaa267e7e134cf8a79371.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

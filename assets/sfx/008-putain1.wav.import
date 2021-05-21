@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/008-putain1.wav-cc7a6dddde013c7b1a724bdc7209b28a.sample"
+
+[deps]
+
+source_file="res://assets/sfx/008-putain1.wav"
+dest_files=[ "res://.import/008-putain1.wav-cc7a6dddde013c7b1a724bdc7209b28a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

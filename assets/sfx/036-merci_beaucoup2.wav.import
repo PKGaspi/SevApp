@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/036-merci_beaucoup2.wav-f3b2a6942c8f1a7a2727403d26318a71.sample"
+
+[deps]
+
+source_file="res://assets/sfx/036-merci_beaucoup2.wav"
+dest_files=[ "res://.import/036-merci_beaucoup2.wav-f3b2a6942c8f1a7a2727403d26318a71.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

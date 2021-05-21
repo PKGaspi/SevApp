@@ -1,0 +1,313 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://assets/sfx/006-desolee1.wav" type="AudioStream" id=1]
+[ext_resource path="res://SoundButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/sfx/008-putain1.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sfx/014-que_pasa.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sfx/019-mamma2.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sfx/011-putain4.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/sfx/032-obrigado.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/sfx/005-tortelloni.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sfx/001-vladimir.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/sfx/002-paja_rapida.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/sfx/017-vaffanculo.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/sfx/033-muchas_gracias.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/sfx/035-merci_beaucoup1.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/sfx/013-que_paso.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/sfx/034-mucho_texto.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/sfx/004-si.wav" type="AudioStream" id=16]
+[ext_resource path="res://assets/sfx/027-hdp.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sfx/012-que_pase.wav" type="AudioStream" id=18]
+[ext_resource path="res://assets/sfx/003-vale.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/sfx/029-gilipollah.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/sfx/037-plspls.wav" type="AudioStream" id=21]
+[ext_resource path="res://assets/sfx/023-porco_dio.wav" type="AudioStream" id=22]
+[ext_resource path="res://assets/sfx/009-putain2.wav" type="AudioStream" id=23]
+[ext_resource path="res://assets/sfx/030-como_pizza.wav" type="AudioStream" id=24]
+[ext_resource path="res://assets/sfx/039-bloody_fools.wav" type="AudioStream" id=25]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 1080.0
+margin_bottom = 1920.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/VBoxContainer"]
+margin_right = 1080.0
+margin_bottom = 1920.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3
+
+[node name="SoundButton" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_right = 357.0
+margin_bottom = 236.0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "Vladimir"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton" index="0"]
+stream = ExtResource( 9 )
+
+[node name="SoundButton2" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_right = 718.0
+margin_bottom = 236.0
+text = "Paja"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton2" index="0"]
+stream = ExtResource( 10 )
+
+[node name="SoundButton13" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_right = 1079.0
+margin_bottom = 236.0
+text = "Mucho Texto"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton13" index="0"]
+stream = ExtResource( 15 )
+
+[node name="SoundButton3" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 240.0
+margin_right = 357.0
+margin_bottom = 476.0
+text = "Ah Putain"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton3" index="0"]
+stream = ExtResource( 3 )
+
+[node name="SoundButton21" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 240.0
+margin_right = 718.0
+margin_bottom = 476.0
+text = "Shut Up Putain"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton21" index="0"]
+stream = ExtResource( 23 )
+
+[node name="SoundButton23" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 240.0
+margin_right = 1079.0
+margin_bottom = 476.0
+text = "Putain Merde"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton23" index="0"]
+stream = ExtResource( 6 )
+
+[node name="SoundButton4" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 480.0
+margin_right = 357.0
+margin_bottom = 716.0
+text = "¡Qué pase!"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton4" index="0"]
+stream = ExtResource( 18 )
+
+[node name="SoundButton5" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 480.0
+margin_right = 718.0
+margin_bottom = 716.0
+text = "¿Qué pasó?"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton5" index="0"]
+stream = ExtResource( 14 )
+
+[node name="SoundButton6" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 480.0
+margin_right = 1079.0
+margin_bottom = 716.0
+text = "¿Qué pasa?"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton6" index="0"]
+stream = ExtResource( 4 )
+
+[node name="SoundButton7" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 720.0
+margin_right = 357.0
+margin_bottom = 956.0
+text = "Vale vale"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton7" index="0"]
+stream = ExtResource( 19 )
+
+[node name="SoundButton8" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 720.0
+margin_right = 718.0
+margin_bottom = 956.0
+text = "Sí sí"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton8" index="0"]
+stream = ExtResource( 16 )
+
+[node name="SoundButton9" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 720.0
+margin_right = 1079.0
+margin_bottom = 956.0
+text = "Tortelloni?"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton9" index="0"]
+stream = ExtResource( 8 )
+
+[node name="SoundButton16" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 960.0
+margin_right = 357.0
+margin_bottom = 1196.0
+text = "Obrigado"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton16" index="0"]
+stream = ExtResource( 7 )
+
+[node name="SoundButton11" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 960.0
+margin_right = 718.0
+margin_bottom = 1196.0
+text = "Mamma"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton11" index="0"]
+stream = ExtResource( 5 )
+
+[node name="SoundButton22" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 960.0
+margin_right = 1079.0
+margin_bottom = 1196.0
+text = "Désolée"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton22" index="0"]
+stream = ExtResource( 1 )
+
+[node name="SoundButton12" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 1200.0
+margin_right = 357.0
+margin_bottom = 1436.0
+text = "Porco Dio"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton12" index="0"]
+stream = ExtResource( 22 )
+
+[node name="SoundButton14" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 1200.0
+margin_right = 718.0
+margin_bottom = 1436.0
+text = "HDP"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton14" index="0"]
+stream = ExtResource( 17 )
+
+[node name="SoundButton15" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 1200.0
+margin_right = 1079.0
+margin_bottom = 1436.0
+text = "Gilipolla"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton15" index="0"]
+stream = ExtResource( 20 )
+
+[node name="SoundButton10" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 1440.0
+margin_right = 357.0
+margin_bottom = 1676.0
+text = "Vaffaculo"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton10" index="0"]
+stream = ExtResource( 11 )
+
+[node name="SoundButton17" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 1440.0
+margin_right = 718.0
+margin_bottom = 1676.0
+text = "Merci Beaucoup"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton17" index="0"]
+stream = ExtResource( 13 )
+
+[node name="SoundButton18" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 1440.0
+margin_right = 1079.0
+margin_bottom = 1676.0
+text = "Muchas Gracias"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton18" index="0"]
+stream = ExtResource( 12 )
+
+[node name="SoundButton20" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 1680.0
+margin_right = 357.0
+margin_bottom = 1916.0
+text = "Pizza"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton20" index="0"]
+stream = ExtResource( 24 )
+
+[node name="SoundButton19" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 361.0
+margin_top = 1680.0
+margin_right = 718.0
+margin_bottom = 1916.0
+text = "pls pls"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton19" index="0"]
+stream = ExtResource( 21 )
+
+[node name="SoundButton24" parent="ScrollContainer/VBoxContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 722.0
+margin_top = 1680.0
+margin_right = 1079.0
+margin_bottom = 1916.0
+text = "Bloody Fools"
+
+[node name="Sound" parent="ScrollContainer/VBoxContainer/GridContainer/SoundButton24" index="0"]
+stream = ExtResource( 25 )
+
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton2"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton13"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton3"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton21"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton23"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton4"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton5"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton6"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton7"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton8"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton9"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton16"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton11"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton22"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton12"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton14"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton15"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton10"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton17"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton18"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton20"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton19"]
+[editable path="ScrollContainer/VBoxContainer/GridContainer/SoundButton24"]

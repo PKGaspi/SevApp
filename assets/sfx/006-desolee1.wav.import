@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/006-desolee1.wav-76b290822e3d14e3f16596b6e1fd4631.sample"
+
+[deps]
+
+source_file="res://assets/sfx/006-desolee1.wav"
+dest_files=[ "res://.import/006-desolee1.wav-76b290822e3d14e3f16596b6e1fd4631.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
