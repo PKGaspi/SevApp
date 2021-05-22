@@ -3,5 +3,5 @@
 [ext_resource path="res://assets/Butler_Regular.otf" type="DynamicFontData" id=1]
 
 [resource]
-size = 64
+size = 120
 font_data = ExtResource( 1 )

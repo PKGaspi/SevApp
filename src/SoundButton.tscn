@@ -27,6 +27,7 @@ __meta__ = {
 margin_right = 280.0
 margin_bottom = 280.0
 rect_min_size = Vector2( 280, 280 )
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture_normal = ExtResource( 3 )
