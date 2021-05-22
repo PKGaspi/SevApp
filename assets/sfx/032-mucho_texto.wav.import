@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/032-mucho_texto.wav-8614bb2ff7a86990fc87a49e4d1c193f.sample"
+
+[deps]
+
+source_file="res://assets/sfx/032-mucho_texto.wav"
+dest_files=[ "res://.import/032-mucho_texto.wav-8614bb2ff7a86990fc87a49e4d1c193f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

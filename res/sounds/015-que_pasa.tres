@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/SoundData.gd" type="Script" id=1]
+[ext_resource path="res://assets/sfx/015-que_pasa.wav" type="AudioStream" id=2]
+
+[resource]
+script = ExtResource( 1 )
+title = "¿Qué pasa?"
+transcript = "¿Qué pasa?"
+language = 1
+stream = ExtResource( 2 )
