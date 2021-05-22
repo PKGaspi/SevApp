@@ -16,7 +16,7 @@ __meta__ = {
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 margin_right = 1080.0
-margin_bottom = 115.0
+margin_bottom = 121.0
 mouse_filter = 1
 custom_constants/margin_right = 10
 custom_constants/margin_top = 10
@@ -27,28 +27,30 @@ custom_constants/margin_bottom = 10
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 1070.0
-margin_bottom = 105.0
+margin_bottom = 111.0
 mouse_filter = 1
 color = Color( 0, 0, 0, 0.470588 )
 
 [node name="HideButton" type="Button" parent="MarginContainer"]
-margin_left = 979.0
+margin_left = 10.0
 margin_top = 10.0
 margin_right = 1070.0
-margin_bottom = 105.0
+margin_bottom = 111.0
 mouse_filter = 1
-size_flags_horizontal = 8
 custom_styles/focus = SubResource( 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 0.862745 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 0.862745 )
 toggle_mode = true
 text = "Hide"
 flat = true
+align = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 1070.0
-margin_bottom = 105.0
+margin_bottom = 111.0
 mouse_filter = 2
 custom_constants/margin_top = 15
 custom_constants/margin_bottom = 15
@@ -59,16 +61,17 @@ __meta__ = {
 [node name="TitleLabel" type="Label" parent="MarginContainer/MarginContainer"]
 margin_top = 15.0
 margin_right = 1060.0
-margin_bottom = 80.0
+margin_bottom = 86.0
 custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 0.862745 )
 text = "Language"
 align = 1
 valign = 1
 
 [node name="Buttons" type="GridContainer" parent="."]
-margin_top = 119.0
+margin_top = 125.0
 margin_right = 1080.0
-margin_bottom = 119.0
+margin_bottom = 125.0
 columns = 3
 
 [connection signal="toggled" from="MarginContainer/HideButton" to="." method="_on_HideButton_toggled"]
