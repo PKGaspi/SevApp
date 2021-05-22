@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://res/font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/SoundButton.gd" type="Script" id=2]
+[ext_resource path="res://assets/spr/button_0.png" type="Texture" id=3]
+[ext_resource path="res://assets/spr/button_1.png" type="Texture" id=4]
 
 [node name="SoundButton" type="Control"]
 margin_right = 280.0
-margin_bottom = 300.0
+margin_bottom = 341.0
 rect_min_size = Vector2( 280, 341 )
 mouse_filter = 1
 size_flags_horizontal = 6
@@ -21,13 +23,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
 margin_right = 280.0
 margin_bottom = 280.0
-mouse_filter = 1
+rect_min_size = Vector2( 280, 280 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 1 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -51,4 +55,4 @@ clip_text = true
 
 [node name="Sound" type="AudioStreamPlayer" parent="."]
 
-[connection signal="button_down" from="VBoxContainer/Button" to="Sound" method="play"]
+[connection signal="button_down" from="VBoxContainer/TextureButton" to="Sound" method="play"]
